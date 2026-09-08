@@ -37,15 +37,13 @@ pipeline {
                 configFileProvider([
                     configFile(
                         fileId: 'nexus-maven-settings',
-                            variable: 'MAVEN_SETTINGS'
-            )
-        ]) {
-                sh '''
-                    mvn -s "$MAVEN_SETTINGS" deploy -DskipTests
-                '''
-        }
-    }
-}
+                        variable: 'MAVEN_SETTINGS'
+                    )
+                ]) {
+                    sh '''
+                        mvn -s "$MAVEN_SETTINGS" deploy -DskipTests
+                    '''
+                }
             }
         }
     }
