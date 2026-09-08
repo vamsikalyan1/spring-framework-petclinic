@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-framework-petclinic</artifactId>
-    <version>7.0.3</version>
+    <version>7.0.5</version>
 
     <name>Spring Framework Petclinic</name>
     <packaging>war</packaging>
@@ -649,5 +649,10 @@
             </build>
         </profile>
    </profiles>
-
+<distributionManagement>
+    <repository>
+        <id>nexus-releases</id>
+        <url>http://172.20.66.151:8081/repository/maven-releases/</url>
+    </repository>
+</distributionManagement>
 </project>
