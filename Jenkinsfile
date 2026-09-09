@@ -25,7 +25,7 @@ pipeline {
                     sh '''
                         mvn org.sonarsource.scanner.maven:sonar-maven-plugin:5.8.0.7211:sonar \
                           -Dsonar.projectKey=spring-framework-petclinic \
-                          -Dsonar.host.url=http://172.20.66.151:9000 \
+                          -Dsonar.host.url=http://localhost:9000 \
                           -Dsonar.token=$SONAR_TOKEN
                     '''
                 }
