@@ -652,7 +652,7 @@
 <distributionManagement>
     <repository>
         <id>nexus-releases</id>
-        <url>http://172.20.66.151:8081/repository/maven-releases/</url>
+        <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
 </distributionManagement>
 </project>
